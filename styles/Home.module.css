@@ -19,7 +19,6 @@
   min-height: 100vh;
   margin-left: 25%;
   margin-right: 30%;
-  width: 450px;
 }
 
 
@@ -68,8 +67,9 @@
   flex:1;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 30%;
 }
 
 
@@ -84,7 +84,7 @@
 .aboutHeading:before{
   content: "";
   display: block;
-  width: 120px;
+  width: 200px;
   height: 2px;
   background: var(--secondary-color);
   left: 0;
@@ -95,20 +95,26 @@
 .aboutHeading:after{
   content: "";
   display: block;
-  width: 120px;
+  width: 200px;
   height: 2px;
   background: var(--secondary-color);
   right: 0;
   top: 50%;
   position: absolute;
 }
+
+
 #carouselImage{
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size:cover;
   width: 100%;
+  margin: 40px 0px;
+
 }
 
 .imagesOnSlide{
@@ -118,8 +124,8 @@
 
 .backImageButton{
   position: absolute;
-  top: 49%;
-  right: 59%;
+  top: 50%;
+  right: 65%;
   opacity: 100%;
 }
 
@@ -130,7 +136,7 @@
 .nextImageButton{
   position: absolute;
   top: 50%;
-  right: 38%;
+  right: 30%;
   opacity: 100%;
 }
 
@@ -145,14 +151,71 @@
   align-items: center;
   justify-content: center;
   top: 46%;
-  left: 42%;
-  right: 42%;
+  left: 30%;
+  right: 30%;
   background-color: rgba(16, 46, 53, 0.5);
   padding: 10px;
   margin: 0px 50px;
 }
 
+/* CONTACT */
 
+.contactMain{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 30%;
+}
+
+.contactHeading{
+  display: flex;
+  margin: 100px auto;
+  text-align: center;
+  font-size: 30px;
+  max-width: 600px;
+  position: relative;
+}
+
+
+.contactHeading:before{
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: var(--secondary-color);
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.contactHeading:after{
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: var(--secondary-color);
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+
+
+
+
+
+.table{
+  display: flex;
+  flex-direction: row;
+}
+
+#firstName, #lastName, #email{
+  background-color: white;
+  width: 100%;
+}
 
 
 /* COMPONENTS */
@@ -180,6 +243,27 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .aboutHeading:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--secondary-color);
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .aboutHeading:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--secondary-color);
+    right: 0;
+    top: 50%;
+    position: absolute;
   }
 }
 

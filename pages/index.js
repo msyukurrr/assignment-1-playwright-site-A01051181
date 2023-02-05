@@ -12,13 +12,14 @@ export default function Home() {
       <Head>
         <title>Home</title>
         <meta name="author" content="MDIA 2109" />
-        <meta property="og:title" content="Assignment#1 - Home Page" />
+        <meta property="og:title" content="Assignment #1 - Home Page" />
         <meta property="og:description" content="BCIT Digital Design and Development Diploma" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <HamMenu/>
       <main className={styles.main}>
+
           <h1>An investment in knowledge pays the best interest.</h1>
 
           <hr className={styles.line}></hr>
