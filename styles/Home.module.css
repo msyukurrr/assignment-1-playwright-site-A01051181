@@ -1,15 +1,168 @@
+
+/* HOME PAGE */
 .container {
   padding: 0 2rem;
+  background-image: url('/background-images/backgroundMountain.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
   display: flex;
+  flex:1;
+  flex-direction:column;
+  justify-content: left;
+  align-items: left;
+  background-color: transparent;
+  line-height: 1.5;
+  padding-top: 25%;
+  min-height: 100vh;
+  margin-left: 25%;
+  margin-right: 30%;
+  width: 450px;
+}
+
+
+.line{
+  border-top: 4px solid var(--secondary-color);
+  border-bottom: 0px;
+  width: 75%;
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+.buttonCont{
+  display: flex; 
+}
+
+.button{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+
+.button:hover{
+  background-color: white;
+  color: var(--quaternary-color);
+}
+
+.homeArrow{
+  display:flex;
+  position: sticky;
+  justify-content: right;
+  background-color: transparent;
+  bottom: 100px;
+}
+
+/* ABOUT PAGE */
+
+.aboutContainer {
+  background-color: var(--quaternary-color);
+
+}
+
+.aboutMain{
+  display: flex;
+  flex:1;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+
+}
+
+
+.aboutHeading{
+  margin: 100px auto;
+  text-align: center;
+  font-size: 30px;
+  max-width: 600px;
+  position: relative;
+}
+
+.aboutHeading:before{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: var(--secondary-color);
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.aboutHeading:after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: var(--secondary-color);
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+#carouselImage{
+  display: flex;
+  position: relative;
+  justify-content: center;
   align-items: center;
+  height: 250px;
+  width: 100%;
+}
+
+.imagesOnSlide{
+  width: 100%;
+  height: 250px;
+}
+
+.backImageButton{
+  position: absolute;
+  top: 49%;
+  right: 59%;
+  opacity: 100%;
+}
+
+.backImageButton:hover{
+  opacity: 80%;
+}
+
+.nextImageButton{
+  position: absolute;
+  top: 50%;
+  right: 38%;
+  opacity: 100%;
+}
+
+.nextImageButton:hover{
+  opacity:80%;
+}
+
+#testOnImageHere{
+  display: flex;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  top: 46%;
+  left: 42%;
+  right: 42%;
+  background-color: rgba(16, 46, 53, 0.5);
+  padding: 10px;
+  margin: 0px 50px;
+}
+
+
+
+
+/* COMPONENTS */
+
+.arrowCont{
+  display:flex;
+  position: sticky;
+  justify-content: right;
+  background-color: transparent;
+  top: 500px;
 }
 
 .footer {
@@ -21,92 +174,7 @@
   align-items: center;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
 
 @media (max-width: 600px) {
   .grid {
